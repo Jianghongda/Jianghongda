@@ -10,4 +10,6 @@ public class MyClass implements MyInterface{
     public void method2() {
 
     }
+
+
 }

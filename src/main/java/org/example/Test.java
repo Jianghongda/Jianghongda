@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Date;
 import java.util.HashMap;
 
 public class Test extends Person{
@@ -69,6 +70,20 @@ public class Test extends Person{
         if (map.containsKey("1")) {
             System.out.println("map contains key 1");
         }
+
+        //Hashtable是一种线程安全的HashMap实现，可以让多个线程同时访问哈希表
+        //LinkedHashMap可以使用链表来维护记录的插入顺序，从而提供有序的访问
+        //TreeMap可以按照排序键来存储和访问记录
+
+        Date date = new Date();
+        System.out.println(date);//输出的是当前时间
+        System.out.println(date.getTime());//输出的是当前时间戳
+        System.out.println(date.getDay());//输出的是当前属于星期几
+        System.out.println(date.getMonth());//输出的是当前是几月，注意jdk里面的月份是从0开始计算的
+        System.out.println(date.getYear()+1900);//输出的是当前的年，注意jdk里面的年是从1900年开始累积的，2024年输出的是124
+        System.out.println(date.getHours());//输出的是当前小时数
+        System.out.println(date.getMinutes());//输出的是当前分钟数
+        System.out.println(date.getSeconds());//输出的是当前秒数
 
     }
 }

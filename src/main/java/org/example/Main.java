@@ -1,0 +1,12 @@
+package org.example;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+        demo student = new demo();
+        student.name = "zhangsan";
+        student.study();
+        student.play();
+    }
+
+}

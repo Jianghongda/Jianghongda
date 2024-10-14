@@ -59,7 +59,16 @@ public class Test extends Person{
         map.put("1", "One");
         map.put("2", "Two");
         map.put("3", "Three");
-
+        //get(key):获取元素
+        String value = map.get("1");
+        System.out.println(value);
+        //remove(key):删除元素
+        map.remove("1");
+        //containsKey(key):判断是否包含某个key
+        map.put("1", "One");
+        if (map.containsKey("1")) {
+            System.out.println("map contains key 1");
+        }
 
     }
 }
